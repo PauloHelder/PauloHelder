@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @PauloHelder
-- 👀 I’m interested in Laravel, ReactJS and ReactNative, Analisys and System developer
+- 👀 I’m interested in Laravel and ReactJS, Analisys and System developer
 - 🌱 I’m currently learning React Native
 - 💞️ I’m looking to collaborate on ReactJS Project
 - 📫 How to reach me pphelder@gmail.com
