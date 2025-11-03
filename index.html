@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio de Paulo Helder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #007bff, #6610f2);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    header h1 { font-size: 2.5rem; margin-bottom: .5rem; }
+    header p { font-size: 1.2rem; opacity: .9; }
+
+    nav {
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 1rem;
+    }
+    nav ul li {
+      margin: 0 1rem;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav ul li a:hover {
+      color: #007bff;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 2.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #007bff;
+      border-left: 4px solid #007bff;
+      padding-left: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .sobre img {
+      width: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 1.5rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .sobre p {
+      text-align: center;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .projetos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform .2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    }
+    .card h3 { color: #007bff; margin-bottom: .5rem; }
+
+    .servicos ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+    .servicos li {
+      background: #f8f9fa;
+      padding: 1rem;
+      border-radius: 8px;
+      border-left: 4px solid #007bff;
+    }
+
+    .contato p {
+      margin-bottom: .5rem;
+    }
+    .contato a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #007bff;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background .3s ease;
+    }
+    .btn:hover {
+      background: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      margin: 2rem 0;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      section { padding: 1.5rem; margin: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Paulo Helder</h1>
+    <p>Desenvolvedor, Gestor e Freelancer em Tecnologia</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <section id="sobre" class="sobre">
+    <img src="https://via.placeholder.com/150" alt="Foto de Paulo Helder" />
+    <h2>Sobre Mim</h2>
+    <p>Sou um profissional apaixonado por tecnologia e inovação, com experiência em desenvolvimento de sistemas, gestão de projetos e soluções digitais. Atuo com Python, Django, Flet e ferramentas modernas de automação e produtividade. Busco entregar resultados práticos e eficientes para empresas e organizações.</p>
+    <div style="text-align:center">
+      <a href="curriculo.pdf" class="btn" target="_blank">Baixar Currículo (PDF)</a>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <h2>Projetos</h2>
+    <div class="projetos">
+      <div class="card">
+        <h3>Sistema de Gestão de Igrejas (SaaS)</h3>
+        <p>Plataforma completa em Django/Flet para gestão de células, cultos e finanças eclesiásticas.</p>
+      </div>
+      <div class="card">
+        <h3>App de Prospecção Mineira</h3>
+        <p>Sistema móvel para marcação e coleta de dados geológicos com GPS e imagens.</p>
+      </div>
+      <div class="card">
+        <h3>Dashboard Financeiro</h3>
+        <p>Aplicação web para monitoramento de receitas e despesas em tempo real com gráficos interativos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" class="servicos">
+    <h2>Serviços</h2>
+    <ul>
+      <li>💻 Desenvolvimento Web (Django, Flet, APIs REST)</li>
+      <li>📱 Aplicações móveis e PWA</li>
+      <li>🧩 Integração de sistemas empresariais</li>
+      <li>📊 Dashboards e relatórios personalizados</li>
+      <li>🧠 Consultoria em transformação digital</li>
+    </ul>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2>Contato</h2>
+    <p>📧 Email: <a href="mailto:paulohelder@example.com">paulohelder@example.com</a></p>
+    <p>🌐 GitHub: <a href="https://github.com/SEU_USUARIO" target="_blank">github.com/SEU_USUARIO</a></p>
+    <p>💼 LinkedIn: <a href="https://linkedin.com/in/SEU_USUARIO" target="_blank">linkedin.com/in/SEU_USUARIO</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Paulo Helder — Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>
